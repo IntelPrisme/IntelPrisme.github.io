@@ -66,9 +66,17 @@ body {
 
 /* Responsivité (Mobile) */
 @media (max-width: 640px) {
-    .bento-grid { grid-template-columns: 1fr; }
+    .bento-grid { grid-template-columns: 1fr; padding: 16px; gap: 12px; }
     .module-title, .module-botanic, .module-code, .module-hours, .module-rouages, .module-object, .module-distillat { 
         grid-column: span 1; 
         grid-row: auto;
     }
+}
+
+/* Utilitaires pour le défilement horizontal sur mobile */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none; scrollbar-width: none;
 }

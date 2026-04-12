@@ -9,7 +9,18 @@
     
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="flex min-h-screen">
+<body class="flex flex-col md:flex-row min-h-screen">
+
+    <!-- Menu Mobile -->
+    <header class="md:hidden flex items-center justify-between p-6 border-b border-gray-200 bg-[#F9F9F9] sticky top-0 z-20">
+        <a href="index.html">
+            <h2 class="text-sm font-bold tracking-widest uppercase text-black hover:text-blue-600 transition-colors">PRISME</h2>
+        </a>
+        <nav class="flex gap-6 text-xs font-bold tracking-widest text-gray-500">
+            <a href="distillat.html" class="hover:text-black uppercase transition-colors">Le distillat</a>
+            <a href="rouages.html" class="hover:text-black uppercase transition-colors">Rouages</a>
+        </nav>
+    </header>
 
     <aside class="w-1/6 min-w-[200px] border-r border-gray-200 hidden md:flex flex-col p-8 sticky top-0 h-screen bg-[#F9F9F9] z-10">
         <a href="index.html">
@@ -21,17 +32,17 @@
         </nav>
     </aside>
 
-    <main class="flex-1 w-full max-w-[1400px] p-8 md:p-12">
+    <main class="flex-1 w-full max-w-[1400px] p-6 md:p-12">
         
         <a href="distillat.html" class="text-sm font-semibold tracking-widest text-gray-500 hover:text-blue-600 uppercase mb-8 inline-flex items-center gap-2 transition-colors">
             <span>←</span> Retour au distillat
         </a>
 
         <div class="mt-4">
-            <article class="mx-auto w-full max-w-4xl bg-white p-8 md:p-10 border border-gray-200 rounded-lg shadow-sm">
+            <article class="mx-auto w-full max-w-4xl bg-white p-6 md:p-10 border border-gray-200 rounded-lg shadow-sm">
                 <div class="mb-4 text-[11px] font-bold text-gray-400 tracking-widest uppercase">POLITIQUE/GÉOPOLITIQUE</div>
                 <h1 class="font-serif text-3xl md:text-5xl text-black mb-8">Le prince - Nicolas Machiavel</h1>
-                <p class="text-gray-700 leading-relaxed mb-6 text-lg">En rupture totale avec la tradition idéaliste de son époque, Le Prince de Nicolas Machiavel marque la naissance de la science politique moderne. L’œuvre ne traite pas de ce que devrait être l’État, mais de ce qu’il est réellement : un espace de lutte pour la conquête et la conservation du pouvoir.</p>
+                <p class="text-gray-700 leading-relaxed mb-6 text-base md:text-lg">En rupture totale avec la tradition idéaliste de son époque, Le Prince de Nicolas Machiavel marque la naissance de la science politique moderne. L’œuvre ne traite pas de ce que devrait être l’État, mais de ce qu’il est réellement : un espace de lutte pour la conquête et la conservation du pouvoir.</p>
                 
                 <h3 class="text-xl font-semibold text-black mb-3 mt-8">L'autonomie de la politique</h3>
                 <p class="text-gray-700 leading-relaxed mb-6">Machiavel est le premier à séparer radicalement la politique de la morale et de la religion. Pour lui, la politique a sa propre logique. Un souverain qui cherche à être "bon" dans un monde de prédateurs court à sa perte. L'efficacité devient la valeur suprême : une action n'est pas jugée "juste" ou "injuste", mais "utile" ou "nuisible" à la stabilité de l'État. C'est l'acte de naissance de la « raison d'État ».</p>
@@ -58,7 +69,7 @@
 
                 <div class="h-px w-full bg-gray-200 my-8"></div>
                 
-                <p class="text-gray-900 font-medium leading-relaxed italic text-lg">
+                <p class="text-gray-900 font-medium leading-relaxed italic text-base md:text-lg">
                     En somme, Le Prince est un manuel de survie dans un environnement hostile. Il enseigne que la stabilité d'un pays justifie l'emploi de moyens parfois moralement condamnables, car la pire des immoralités en politique reste, pour Machiavel, l'impuissance et l'échec.
                 </p>
             </article>
