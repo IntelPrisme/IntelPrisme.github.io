@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRISME</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=JetBrains+Mono&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex min-h-screen">
+
+    <aside class="w-1/6 min-w-[200px] border-r border-gray-200 hidden md:flex flex-col p-8 sticky top-0 h-screen bg-[#F9F9F9] z-10">
+        <a href="index.html">
+            <h2 class="text-sm font-bold tracking-widest mb-16 uppercase text-black hover:text-blue-600 transition-colors">PRISME</h2>
+        </a>
+        <nav class="flex flex-col gap-6 text-xs font-semibold tracking-widest text-gray-500">
+            <a href="distillat.html" class="text-black border-l-2 border-blue-600 pl-3 uppercase">Le distillat</a>
+            <a href="rouages.html" class="hover:text-black hover:border-l-2 hover:border-gray-300 pl-3 uppercase transition-all">Rouages</a>
+        </nav>
+    </aside>
+
+    <main class="flex-1 w-full max-w-[1400px]">
+        <div class="bento-grid">
+            
+            <div class="bento-item module-title pt-6 px-2 mb-4">
+                <h1 class="font-serif text-6xl md:text-8xl tracking-tight text-black">PRISME</h1>
+            </div>
+
+            <div class="bento-item module-botanic"></div>
+            <div class="bento-item module-code"></div>
+            
+            <div class="bento-item module-rouages group relative flex flex-col">
+                <!-- En-tête de la carte -->
+                <div class="flex justify-between items-center mb-6 z-20 bg-white">
+                    <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">ROUAGES</span>
+                    <a href="rouages.html" class="text-[10px] text-blue-600 font-bold uppercase tracking-widest hover:underline">Voir tout →</a>
+                </div>
+                
+                <!-- Zone de défilement (masquée aux extrémités) -->
+                <div class="relative flex-1 overflow-hidden w-full">
+                    <!-- Effets de fondu blanc en haut et en bas pour un bord doux -->
+                    <div class="absolute top-0 left-0 w-full h-6 bg-gradient-to-b from-white to-transparent z-10 pointer-events-none"></div>
+                    <div class="absolute bottom-0 left-0 w-full h-6 bg-gradient-to-t from-white to-transparent z-10 pointer-events-none"></div>
+                    
+                    <!-- Conteneur animé -->
+                    <div class="animate-scroll-y flex flex-col gap-6 absolute w-full top-0">
+                        
+                        <!-- Premier Set (Les vrais articles) -->
+                        <div class="flex flex-col gap-6">
+                            <a href="article-lelite.html" class="block group/link">
+                                <span class="text-[10px] text-blue-600 font-bold uppercase tracking-widest mb-1 block">Sociologie / Système</span>
+                                <h3 class="font-serif text-lg leading-tight text-gray-900 group-hover/link:text-blue-600 transition-colors">L’Élite : La sélection par le conformisme</h3>
+                            </a>
+                            <a href="article-lelite.html" class="block group/link">
+                                <span class="text-[10px] text-blue-600 font-bold uppercase tracking-widest mb-1 block">Sociologie / Système</span>
+                                <h3 class="font-serif text-lg leading-tight text-gray-900 group-hover/link:text-blue-600 transition-colors">L’Élite : La sélection par le conformisme</h3>
+                            </a>
+                        </div>
+                        
+                        <!-- Second Set (Un clone exact pour que la boucle soit infinie et invisible) -->
+                        <div class="flex flex-col gap-6">
+                            <a href="article-lelite.html" class="block group/link">
+                                <span class="text-[10px] text-blue-600 font-bold uppercase tracking-widest mb-1 block">Sociologie / Système</span>
+                                <h3 class="font-serif text-lg leading-tight text-gray-900 group-hover/link:text-blue-600 transition-colors">L’Élite : La sélection par le conformisme</h3>
+                            </a>
+                            <a href="article-lelite.html" class="block group/link">
+                                <span class="text-[10px] text-blue-600 font-bold uppercase tracking-widest mb-1 block">Sociologie / Système</span>
+                                <h3 class="font-serif text-lg leading-tight text-gray-900 group-hover/link:text-blue-600 transition-colors">L’Élite : La sélection par le conformisme</h3>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bento-item module-hours"></div>
+            <div class="bento-item module-object"></div>
+
+            <div class="bento-item module-distillat group relative flex flex-col">
+                <!-- En-tête de la carte -->
+                <div class="flex justify-between items-center mb-6 z-20 bg-white">
+                    <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">LE DISTILLAT</span>
+                    <a href="distillat.html" class="text-[10px] text-blue-600 font-bold uppercase tracking-widest hover:underline">Voir tout →</a>
+                </div>
+                
+                <!-- Zone de défilement (masquée aux extrémités) -->
+                <div class="relative flex-1 overflow-hidden w-full">
+                    <!-- Effets de fondu blanc en haut et en bas pour un bord doux -->
+                    <div class="absolute top-0 left-0 w-full h-6 bg-gradient-to-b from-white to-transparent z-10 pointer-events-none"></div>
+                    <div class="absolute bottom-0 left-0 w-full h-6 bg-gradient-to-t from-white to-transparent z-10 pointer-events-none"></div>
+                    
+                    <!-- Conteneur animé -->
+                    <div class="animate-scroll-y flex flex-col gap-6 absolute w-full top-0">
+                        
+                        <!-- Premier Set (Les vrais articles) -->
+                        <div class="flex flex-col gap-6">
+                            <a href="article-le-petit-prince.html" class="block group/link">
+                                <span class="text-[10px] text-blue-600 font-bold uppercase tracking-widest mb-1 block">Philosophie</span>
+                                <h3 class="font-serif text-lg leading-tight text-gray-900 group-hover/link:text-blue-600 transition-colors">Le petit prince - Antoine de Saint-Exupéry</h3>
+                            </a>
+                            <a href="article-le-prince.html" class="block group/link">
+                                <span class="text-[10px] text-blue-600 font-bold uppercase tracking-widest mb-1 block">Politique/Géopolitique</span>
+                                <h3 class="font-serif text-lg leading-tight text-gray-900 group-hover/link:text-blue-600 transition-colors">Le prince - Nicolas Machiavel</h3>
+                            </a>
+                            <a href="article-lorientalisme.html" class="block group/link">
+                                <span class="text-[10px] text-blue-600 font-bold uppercase tracking-widest mb-1 block">Politique/Géopolitique</span>
+                                <h3 class="font-serif text-lg leading-tight text-gray-900 group-hover/link:text-blue-600 transition-colors">L'Orientalisme : L'Orient créé par l'Occident</h3>
+                            </a>
+                            <a href="article-les-mots-et-les-choses.html" class="block group/link">
+                                <span class="text-[10px] text-blue-600 font-bold uppercase tracking-widest mb-1 block">Philosophie</span>
+                                <h3 class="font-serif text-lg leading-tight text-gray-900 group-hover/link:text-blue-600 transition-colors">Les Mots et les Choses - Michel Foucault</h3>
+                            </a>
+                        </div>
+                        
+                        <!-- Second Set (Un clone exact pour que la boucle soit infinie et invisible) -->
+                        <div class="flex flex-col gap-6">
+                            <a href="article-le-petit-prince.html" class="block group/link">
+                                <span class="text-[10px] text-blue-600 font-bold uppercase tracking-widest mb-1 block">Philosophie</span>
+                                <h3 class="font-serif text-lg leading-tight text-gray-900 group-hover/link:text-blue-600 transition-colors">Le petit prince - Antoine de Saint-Exupéry</h3>
+                            </a>
+                            <a href="article-le-prince.html" class="block group/link">
+                                <span class="text-[10px] text-blue-600 font-bold uppercase tracking-widest mb-1 block">Politique/Géopolitique</span>
+                                <h3 class="font-serif text-lg leading-tight text-gray-900 group-hover/link:text-blue-600 transition-colors">Le prince - Nicolas Machiavel</h3>
+                            </a>
+                            <a href="article-lorientalisme.html" class="block group/link">
+                                <span class="text-[10px] text-blue-600 font-bold uppercase tracking-widest mb-1 block">Politique/Géopolitique</span>
+                                <h3 class="font-serif text-lg leading-tight text-gray-900 group-hover/link:text-blue-600 transition-colors">L'Orientalisme : L'Orient créé par l'Occident</h3>
+                            </a>
+                            <a href="article-les-mots-et-les-choses.html" class="block group/link">
+                                <span class="text-[10px] text-blue-600 font-bold uppercase tracking-widest mb-1 block">Philosophie</span>
+                                <h3 class="font-serif text-lg leading-tight text-gray-900 group-hover/link:text-blue-600 transition-colors">Les Mots et les Choses - Michel Foucault</h3>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
