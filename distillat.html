@@ -37,11 +37,13 @@
         <p class="text-gray-600">L'essence de mes explorations.</p>
 
         <!-- Filtres de catégories -->
-        <div class="mt-10 flex overflow-x-auto no-scrollbar gap-6 md:gap-8 border-b border-gray-200 pb-4">
-            <button data-category="tout" class="filter-btn text-xs font-bold tracking-widest text-blue-600 uppercase border-b-2 border-blue-600 pb-2 -mb-[18px] shrink-0">TOUT</button>
-            <button data-category="philosophie" class="filter-btn text-xs font-semibold tracking-widest text-gray-500 hover:text-black uppercase pb-2 transition-colors shrink-0">PHILOSOPHIE</button>
-            <button data-category="sciences" class="filter-btn text-xs font-semibold tracking-widest text-gray-500 hover:text-black uppercase pb-2 transition-colors shrink-0">SCIENCES</button>
-            <button data-category="politique" class="filter-btn text-xs font-semibold tracking-widest text-gray-500 hover:text-black uppercase pb-2 transition-colors shrink-0">POLITIQUE/GÉOPOLITIQUE</button>
+        <div class="mt-10 border-b border-gray-200">
+            <nav class="-mb-px flex overflow-x-auto no-scrollbar gap-6 md:gap-8">
+                <button data-category="tout" class="filter-btn whitespace-nowrap border-b-2 border-blue-600 pb-4 text-xs font-bold uppercase tracking-widest text-blue-600 transition-colors">TOUT</button>
+                <button data-category="philosophie" class="filter-btn whitespace-nowrap border-b-2 border-transparent pb-4 text-xs font-semibold uppercase tracking-widest text-gray-500 hover:border-gray-300 hover:text-black transition-colors">PHILOSOPHIE</button>
+                <button data-category="sciences" class="filter-btn whitespace-nowrap border-b-2 border-transparent pb-4 text-xs font-semibold uppercase tracking-widest text-gray-500 hover:border-gray-300 hover:text-black transition-colors">SCIENCES</button>
+                <button data-category="politique" class="filter-btn whitespace-nowrap border-b-2 border-transparent pb-4 text-xs font-semibold uppercase tracking-widest text-gray-500 hover:border-gray-300 hover:text-black transition-colors">POLITIQUE/GÉOPOLITIQUE</button>
+            </nav>
         </div>
 
         <div class="mt-10 flex flex-col gap-12">

@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const articles = document.querySelectorAll('.article-card');
 
     // Classes Tailwind pour l'état "Actif" et "Inactif" des boutons
-    const activeClasses = ['font-bold', 'text-blue-600', 'border-b-2', 'border-blue-600', '-mb-[18px]'];
-    const inactiveClasses = ['font-semibold', 'text-gray-500', 'hover:text-black', 'transition-colors'];
+    const activeClasses = ['font-bold', 'text-blue-600', 'border-blue-600'];
+    const inactiveClasses = ['font-semibold', 'text-gray-500', 'border-transparent', 'hover:border-gray-300', 'hover:text-black'];
 
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
