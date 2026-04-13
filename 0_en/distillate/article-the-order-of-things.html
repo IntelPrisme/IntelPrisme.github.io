@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Order of Things - PRISME</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=JetBrains+Mono&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="flex flex-col md:flex-row min-h-screen">
+
+    <!-- Menu Mobile -->
+    <header class="md:hidden flex items-center justify-between p-6 border-b border-gray-200 bg-[#F9F9F9] sticky top-0 z-20">
+        <a href="../index.html">
+            <h2 class="text-sm font-bold tracking-widest uppercase text-black hover:text-blue-600 transition-colors">PRISME</h2>
+        </a>
+        <nav class="flex gap-6 text-xs font-bold tracking-widest text-gray-500">
+            <a href="../distillate.html" class="hover:text-black uppercase transition-colors">The Distillate</a>
+            <a href="../gears.html" class="hover:text-black uppercase transition-colors">Gears</a>
+            <a href="../fragments.html" class="hover:text-black uppercase transition-colors">Fragments</a>
+            <div class="ml-2 pl-4 border-l border-gray-300 flex items-center gap-1">
+                <a href="../../distillat/article-les-mots-et-les-choses.html" class="hover:text-blue-600 transition-colors">FR</a>
+                <span class="text-gray-300 font-normal">/</span>
+                <span class="text-black">EN</span>
+            </div>
+        </nav>
+    </header>
+
+    <aside class="w-1/6 min-w-[200px] border-r border-gray-200 hidden md:flex flex-col p-8 sticky top-0 h-screen bg-[#F9F9F9] z-10">
+        <a href="../index.html">
+            <h2 class="text-sm font-bold tracking-widest mb-16 uppercase text-black hover:text-blue-600 transition-colors">PRISME</h2>
+        </a>
+        <nav class="flex flex-col gap-6 text-xs font-semibold tracking-widest text-gray-500">
+            <a href="../distillate.html" class="text-black border-l-2 border-blue-600 pl-3 uppercase">The Distillate</a>
+            <a href="../gears.html" class="hover:text-black hover:border-l-2 hover:border-gray-300 pl-3 uppercase transition-all">Gears</a>
+            <a href="../fragments.html" class="hover:text-black hover:border-l-2 hover:border-gray-300 pl-3 uppercase transition-all">Fragments</a>
+        </nav>
+        
+        <div class="mt-auto text-xs font-bold tracking-widest text-gray-400">
+            <a href="../../distillat/article-les-mots-et-les-choses.html" class="hover:text-blue-600 transition-colors">FR</a> <span class="text-gray-300 font-normal mx-1">/</span> <span class="text-black">EN</span>
+        </div>
+    </aside>
+
+    <main class="flex-1 w-full max-w-[1400px] p-6 md:p-12">
+        
+        <a href="../distillate.html" class="text-sm font-semibold tracking-widest text-gray-500 hover:text-blue-600 uppercase mb-8 inline-flex items-center gap-2 transition-colors">
+            <span>←</span> Back to the distillate
+        </a>
+
+        <div class="mt-4">
+            <article class="mx-auto w-full max-w-4xl bg-white p-6 md:p-10 border border-gray-200 rounded-lg shadow-sm">
+                <div class="mb-4 text-[11px] font-bold text-gray-400 tracking-widest uppercase">PHILOSOPHY</div>
+                <h1 class="font-serif text-3xl md:text-5xl text-black mb-4">The Order of Things - Michel Foucault</h1>
+                <div class="flex items-center gap-2 text-xs font-bold text-gray-400 tracking-widest uppercase mb-8">
+                    <span>⏱ 2 min read</span>
+                </div>
+                <p class="text-gray-700 leading-relaxed mb-6 text-base md:text-lg">In The Order of Things (1966), Michel Foucault proposes an "archaeology" of the human sciences. His goal is to uncover the episteme, that is, the bedrock of unconscious rules which, in a given era, defines what is sayable, thinkable, and true.</p>
+                
+                <h3 class="text-xl font-semibold text-black mb-3 mt-8">1. The Renaissance (up to the mid-17th century): Resemblance</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">At this time, the world was read like a book. Knowledge was based on similitude. To understand a plant or a star, one looked for signs of resemblance (the signature of God).</p>
+                <ul class="list-disc pl-6 text-gray-700 leading-relaxed mb-6 space-y-2">
+                    <li><strong>Logic:</strong> Language is part of the world; it is a thing among things.</li>
+                    <li><strong>Knowledge:</strong> Interpretation and commentary are the primary tools. There is no rupture between words and objects.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold text-black mb-3 mt-8">2. The Classical Age (mid-17th to 19th century): Representation</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">The episteme shifts: one no longer seeks resemblance, but order and measurement. Language detaches itself from things to become a tool for classification.</p>
+                <ul class="list-disc pl-6 text-gray-700 leading-relaxed mb-6 space-y-2">
+                    <li><strong>The tool:</strong> The "Table". We classify nature (Natural History), we analyze currency (Analysis of Wealth), and we structure language (General Grammar).</li>
+                    <li><strong>Logic:</strong> Knowledge consists of naming correctly and arranging elements in a rational grid to render the world transparent to thought.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold text-black mb-3 mt-8">3. Modernity (19th century - mid-20th century): History and the End of Man</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">A second shift occurs. Things are no longer classified on a static table, but acquire historical depth and internal laws.</p>
+                <ul class="list-disc pl-6 text-gray-700 leading-relaxed mb-6 space-y-2">
+                    <li><strong>The evolution of knowledge:</strong>
+                        <ul class="list-[circle] pl-6 mt-2 space-y-2">
+                            <li>Grammar becomes Linguistics (language has a life of its own).</li>
+                            <li>Analysis of Wealth becomes Economics (production and labor).</li>
+                            <li>Natural History becomes Biology (organism and function).</li>
+                        </ul>
+                    </li>
+                    <li><strong>The emergence of "Man":</strong> It is here that Foucault places his most famous thesis. Before the 19th century, "man" did not exist as an object of study. He appears as a "double figure": he is both the one who knows the world (subject) and a biological or economic object among others (object).</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold text-black mb-3 mt-8">4. The Invention and "Death of Man"</h3>
+                <p class="text-gray-700 leading-relaxed mb-6">This is the climax and the most complex point of the book. Foucault demonstrates that the human being, as we study him today, is merely a recent creation of this modern episteme.</p>
+                
+                <h4 class="text-lg font-semibold text-black mb-2 mt-6">The appearance of Man (19th century)</h4>
+                <p class="text-gray-700 leading-relaxed mb-4">Before 1800, "man" did not exist as an object of science. Human nature or the soul was studied, but not Man as a central figure. He suddenly appears as an "empirico-transcendental doublet":</p>
+                <ul class="list-disc pl-6 text-gray-700 leading-relaxed mb-6 space-y-2">
+                    <li>He is the subject who looks (the one who creates science).</li>
+                    <li>He is the object being looked at (the one that biology, economics, and psychology dissect).</li>
+                </ul>
+
+                <h4 class="text-lg font-semibold text-black mb-2 mt-6">Why speak of his "death"?</h4>
+                <p class="text-gray-700 leading-relaxed mb-4">When Foucault announces the "death of man", he is predicting the end of an intellectual configuration.</p>
+                <ul class="list-disc pl-6 text-gray-700 leading-relaxed mb-8 space-y-2">
+                    <li><strong>Man is a pawn in the system:</strong> Foucault wrote during the era of structuralism. He believes that it is not individuals who create history or meaning, but systems that surpass us (language, power relations, the unconscious, the economy).</li>
+                    <li><strong>The shift of the episteme:</strong> Foucault suggests that if the rules of knowledge change again—for example, if the very structure of language or technology takes precedence over the individual—then the figure of "man" will fade away.</li>
+                </ul>
+
+                <div class="h-px w-full bg-gray-200 my-8"></div>
+                
+                <p class="text-gray-900 font-medium leading-relaxed italic text-base md:text-lg">
+                    Man is an invention of recent date, as the archaeology of our thought easily shows. And perhaps nearing its end. He is like a face drawn in the sand at the edge of the sea: all it takes is for the episteme to shift for the tide to wash him away, leaving room for new forms of knowledge where the individual is no longer the center.
+                </p>
+            </article>
+        </div>
+    </main>
+</body>
+</html>

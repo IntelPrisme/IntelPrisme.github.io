@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Distillate - PRISME</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=JetBrains+Mono&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="flex flex-col md:flex-row min-h-screen">
+
+    <!-- Menu Mobile -->
+    <header class="md:hidden flex items-center justify-between p-6 border-b border-gray-200 bg-[#F9F9F9] sticky top-0 z-20">
+        <a href="index.html">
+            <h2 class="text-sm font-bold tracking-widest uppercase text-black hover:text-blue-600 transition-colors">PRISME</h2>
+        </a>
+        <nav class="flex gap-6 text-xs font-bold tracking-widest text-gray-500">
+            <a href="distillate.html" class="text-blue-600 uppercase transition-colors">The Distillate</a>
+            <a href="gears.html" class="hover:text-black uppercase transition-colors">Gears</a>
+            <a href="fragments.html" class="hover:text-black uppercase transition-colors">Fragments</a>
+            <div class="ml-2 pl-4 border-l border-gray-300 flex items-center gap-1">
+                <a href="../distillat.html" class="hover:text-blue-600 transition-colors">FR</a>
+                <span class="text-gray-300 font-normal">/</span>
+                <span class="text-black">EN</span>
+            </div>
+        </nav>
+    </header>
+
+    <aside class="w-1/6 min-w-[200px] border-r border-gray-200 hidden md:flex flex-col p-8 sticky top-0 h-screen bg-[#F9F9F9] z-10">
+        <a href="index.html">
+            <h2 class="text-sm font-bold tracking-widest mb-16 uppercase text-black hover:text-blue-600 transition-colors">PRISME</h2>
+        </a>
+        <nav class="flex flex-col gap-6 text-xs font-semibold tracking-widest text-gray-500">
+            <a href="distillate.html" class="text-black border-l-2 border-blue-600 pl-3 uppercase">The Distillate</a>
+            <a href="gears.html" class="hover:text-black hover:border-l-2 hover:border-gray-300 pl-3 uppercase transition-all">Gears</a>
+            <a href="fragments.html" class="hover:text-black hover:border-l-2 hover:border-gray-300 pl-3 uppercase transition-all">Fragments</a>
+        </nav>
+        
+        <div class="mt-auto text-xs font-bold tracking-widest text-gray-400">
+            <a href="../distillat.html" class="hover:text-blue-600 transition-colors">FR</a> <span class="text-gray-300 font-normal mx-1">/</span> <span class="text-black">EN</span>
+        </div>
+    </aside>
+
+    <main class="flex-1 w-full max-w-[1400px] p-6 md:p-12">
+        <h1 class="font-serif text-5xl md:text-7xl tracking-tight text-black mb-8">The Distillate</h1>
+        <p class="text-gray-600">The essence of my literary explorations.</p>
+
+        <!-- Filtres de catégories -->
+        <div class="mt-10 border-b border-gray-200">
+            <nav class="-mb-px flex overflow-x-auto no-scrollbar gap-6 md:gap-8">
+                <button data-category="tout" class="filter-btn whitespace-nowrap border-b-2 border-blue-600 pb-4 text-xs font-bold uppercase tracking-widest text-blue-600 transition-colors">ALL</button>
+                <button data-category="philosophie" class="filter-btn whitespace-nowrap border-b-2 border-transparent pb-4 text-xs font-semibold uppercase tracking-widest text-gray-500 hover:border-gray-300 hover:text-black transition-colors">PHILOSOPHY</button>
+                <button data-category="sciences" class="filter-btn whitespace-nowrap border-b-2 border-transparent pb-4 text-xs font-semibold uppercase tracking-widest text-gray-500 hover:border-gray-300 hover:text-black transition-colors">SCIENCES</button>
+                <button data-category="politique" class="filter-btn whitespace-nowrap border-b-2 border-transparent pb-4 text-xs font-semibold uppercase tracking-widest text-gray-500 hover:border-gray-300 hover:text-black transition-colors">POLITICS/GEOPOLITICS</button>
+            </nav>
+        </div>
+
+        <div class="mt-10 flex flex-col gap-12">
+            <a href="distillate/article-the-little-prince.html" data-category="philosophie" class="article-card mx-auto block w-full max-w-4xl bg-white p-8 md:p-10 border border-gray-200 rounded-lg shadow-sm hover:border-blue-600 hover:shadow-md transition-all group cursor-pointer">
+                <div class="mb-4 text-[11px] font-bold text-gray-400 tracking-widest uppercase">PHILOSOPHY</div>
+                <h2 class="font-serif text-3xl md:text-4xl text-black mb-3 group-hover:text-blue-600 transition-colors">The Little Prince - Antoine de Saint-Exupéry</h2>
+                <div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 tracking-widest uppercase mb-4">
+                    <span>⏱ 2 min read</span>
+                </div>
+                <p class="text-gray-700 leading-relaxed mb-6 text-base md:text-lg">The Little Prince by Antoine de Saint-Exupéry, although presented as a children's tale, is a philosophical treatise on the human condition, perception, and emotional bonds.</p>
+                <span class="text-blue-600 font-semibold text-sm tracking-widest uppercase flex items-center gap-2">Read article <span class="group-hover:translate-x-1 transition-transform">→</span></span>
+            </a>
+            
+            <a href="distillate/article-the-prince.html" data-category="politique" class="article-card mx-auto block w-full max-w-4xl bg-white p-8 md:p-10 border border-gray-200 rounded-lg shadow-sm hover:border-blue-600 hover:shadow-md transition-all group cursor-pointer">
+                <div class="mb-4 text-[11px] font-bold text-gray-400 tracking-widest uppercase">POLITICS/GEOPOLITICS</div>
+                <h2 class="font-serif text-3xl md:text-4xl text-black mb-3 group-hover:text-blue-600 transition-colors">The Prince - Niccolò Machiavelli</h2>
+                <div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 tracking-widest uppercase mb-4">
+                    <span>⏱ 2 min read</span>
+                </div>
+                <p class="text-gray-700 leading-relaxed mb-6 text-base md:text-lg">Breaking completely with the idealist tradition of his time, The Prince by Niccolò Machiavelli marks the birth of modern political science. The work does not discuss what the State should be, but what it actually is: an arena of struggle for the conquest and preservation of power.</p>
+                <span class="text-blue-600 font-semibold text-sm tracking-widest uppercase flex items-center gap-2">Read article <span class="group-hover:translate-x-1 transition-transform">→</span></span>
+            </a>
+            
+            <a href="distillate/article-orientalism.html" data-category="politique" class="article-card mx-auto block w-full max-w-4xl bg-white p-8 md:p-10 border border-gray-200 rounded-lg shadow-sm hover:border-blue-600 hover:shadow-md transition-all group cursor-pointer">
+                <div class="mb-4 text-[11px] font-bold text-gray-400 tracking-widest uppercase">POLITICS/GEOPOLITICS</div>
+                <h2 class="font-serif text-3xl md:text-4xl text-black mb-3 group-hover:text-blue-600 transition-colors">Orientalism: Western Conceptions of the Orient - Edward W. Said</h2>
+                <div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 tracking-widest uppercase mb-4">
+                    <span>⏱ 2 min read</span>
+                </div>
+                <p class="text-gray-700 leading-relaxed mb-6 text-base md:text-lg">Edward Said's work, Orientalism, is a masterful application of the notion of episteme to the field of geopolitics and cultural history. Said demonstrates that "the Orient" is not an objective geographical reality, but an intellectual construction shaped by the West.</p>
+                <span class="text-blue-600 font-semibold text-sm tracking-widest uppercase flex items-center gap-2">Read article <span class="group-hover:translate-x-1 transition-transform">→</span></span>
+            </a>
+            
+            <a href="distillate/article-the-order-of-things.html" data-category="philosophie" class="article-card mx-auto block w-full max-w-4xl bg-white p-8 md:p-10 border border-gray-200 rounded-lg shadow-sm hover:border-blue-600 hover:shadow-md transition-all group cursor-pointer">
+                <div class="mb-4 text-[11px] font-bold text-gray-400 tracking-widest uppercase">PHILOSOPHY</div>
+                <h2 class="font-serif text-3xl md:text-4xl text-black mb-3 group-hover:text-blue-600 transition-colors">The Order of Things - Michel Foucault</h2>
+                <div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 tracking-widest uppercase mb-4">
+                    <span>⏱ 2 min read</span>
+                </div>
+                <p class="text-gray-700 leading-relaxed mb-6 text-base md:text-lg">In The Order of Things (1966), Michel Foucault proposes an "archaeology" of the human sciences. His goal is to uncover the episteme, that is, the bedrock of unconscious rules which, in a given era, defines what is sayable, thinkable, and true.</p>
+                <span class="text-blue-600 font-semibold text-sm tracking-widest uppercase flex items-center gap-2">Read article <span class="group-hover:translate-x-1 transition-transform">→</span></span>
+            </a>
+        </div>
+
+    </main>
+
+    <script src="../distillat.js"></script>
+</body>
+</html>

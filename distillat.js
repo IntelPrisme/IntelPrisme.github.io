@@ -22,10 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
             // 2. Filtrer les articles
             articles.forEach(article => {
                 const articleCategory = article.getAttribute('data-category');
-                if (selectedCategory === 'tout' || selectedCategory === articleCategory) {
+                if (selectedCategory === 'tout' || selectedCategory === 'all' || selectedCategory === articleCategory) {
                     article.style.display = 'block';
+                    // Force le rechargement de l'animation
+                    article.classList.remove('animate-fade-in');
+                    void article.offsetWidth; // Astuce pour déclencher un "reflow"
+                    article.classList.add('animate-fade-in');
                 } else {
                     article.style.display = 'none';
+                    article.classList.remove('animate-fade-in');
                 }
             });
         });

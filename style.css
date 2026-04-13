@@ -9,7 +9,7 @@ body {
 /* --- CONFIGURATION DE LA BENTO GRID --- */
 .bento-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(180px, auto);
     gap: 16px;
     padding: 24px;
@@ -31,16 +31,12 @@ body {
 }
 
 /* Assignation des espaces sur la grille (Desktop) */
-.module-title { grid-column: span 4; background: transparent; border: none; padding-bottom: 0; box-shadow: none; }
+.module-title { grid-column: span 3; background: transparent; border: none; padding-bottom: 0; box-shadow: none; }
 .module-title:hover { border-color: transparent; box-shadow: none; }
 
-.module-botanic { grid-column: span 1; grid-row: span 3; }
-.module-code { grid-column: span 1; grid-row: span 1; }
-.module-hours { grid-column: span 1; grid-row: span 1; }
-.module-rouages { grid-column: span 2; grid-row: span 2; background-color: #ffffff; padding: 24px; }
-
-.module-object { grid-column: span 1; grid-row: span 1; }
-.module-distillat { grid-column: span 2; grid-row: span 1; background-color: #ffffff; padding: 24px; }
+.module-haikus { grid-column: span 1; grid-row: span 1; background-color: #1F2937; border-color: #374151; padding: 24px; }
+.module-rouages { grid-column: span 1; grid-row: span 1; background-color: #ffffff; padding: 24px; }
+.module-distillat { grid-column: span 1; grid-row: span 1; background-color: #ffffff; padding: 24px; }
 
 /* --- ANIMATION CARTE DISTILLAT --- */
 @keyframes scroll-y {
@@ -50,8 +46,10 @@ body {
 .animate-scroll-y {
     animation: scroll-y 18s linear infinite;
 }
-.module-distillat:hover .animate-scroll-y,
-.module-rouages:hover .animate-scroll-y {
+.module-haikus .animate-scroll-y {
+    animation-duration: 24s;
+}
+.bento-item:hover .animate-scroll-y {
     animation-play-state: paused;
 }
 
@@ -59,7 +57,7 @@ body {
 @media (max-width: 1024px) {
     .bento-grid { grid-template-columns: repeat(2, 1fr); }
     .module-title { grid-column: span 2; }
-    .module-botanic { grid-column: span 2; grid-row: span 2; }
+    .module-haikus { grid-column: span 2; grid-row: span 1; }
     .module-rouages { grid-column: span 2; }
     .module-distillat { grid-column: span 2; }
 }
@@ -67,7 +65,7 @@ body {
 /* Responsivité (Mobile) */
 @media (max-width: 640px) {
     .bento-grid { grid-template-columns: 1fr; padding: 16px; gap: 12px; }
-    .module-title, .module-botanic, .module-code, .module-hours, .module-rouages, .module-object, .module-distillat { 
+    .module-title, .module-haikus, .module-rouages, .module-distillat { 
         grid-column: span 1; 
         grid-row: auto;
     }
@@ -79,4 +77,13 @@ body {
 }
 .no-scrollbar {
     -ms-overflow-style: none; scrollbar-width: none;
+}
+
+/* --- ANIMATION FILTRE --- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
 }
