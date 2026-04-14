@@ -64,10 +64,13 @@ body {
 
 /* Responsivité (Mobile) */
 @media (max-width: 640px) {
-    .bento-grid { grid-template-columns: 1fr; padding: 16px; gap: 12px; }
+    .bento-grid { grid-template-columns: 1fr; padding: 12px; gap: 12px; }
     .module-title, .module-haikus, .module-rouages, .module-distillat { 
         grid-column: span 1; 
         grid-row: auto;
+    }
+    .module-haikus, .module-rouages, .module-distillat {
+        padding: 16px;
     }
 }
 
