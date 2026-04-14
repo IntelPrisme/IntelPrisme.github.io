@@ -11,19 +11,26 @@
 <body class="flex flex-col md:flex-row min-h-screen">
 
     <!-- Menu Mobile -->
-    <header class="md:hidden flex items-center justify-between p-4 border-b border-gray-200 bg-[#F9F9F9] sticky top-0 z-20">
-        <a href="../index.html">
-            <h2 class="text-sm font-bold tracking-widest uppercase text-black hover:text-blue-600 transition-colors">PRISME</h2>
-        </a>
-        <nav class="flex gap-6 text-xs font-bold tracking-widest text-gray-500">
-            <a href="../distillat.html" class="hover:text-black uppercase transition-colors">The Distillate</a>
-            <a href="../rouages.html" class="hover:text-black uppercase transition-colors">Gears</a>
-            <a href="../fragments.html" class="text-blue-600 uppercase transition-colors">Fragments</a>
-            <div class="ml-2 pl-4 border-l border-gray-300 flex items-center gap-1">
-                <a href="../../fragments/fragment-1.html" class="hover:text-blue-600 transition-colors">FR</a>
-                <span class="text-gray-300 font-normal">/</span>
-                <span class="text-black">EN</span>
+    <header class="md:hidden flex flex-col p-4 border-b border-gray-200 bg-[#F9F9F9] sticky top-0 z-50">
+        <div class="flex items-center justify-between w-full">
+            <a href="../index.html">
+                <h2 class="text-sm font-bold tracking-widest uppercase text-black hover:text-blue-600 transition-colors">PRISME</h2>
+            </a>
+            <div class="flex items-center gap-4 text-xs font-bold tracking-widest">
+                <div class="flex items-center gap-1">
+                    <a href="../../fragments/fragment-1.html" class="text-gray-500 hover:text-blue-600 transition-colors">FR</a>
+                    <span class="text-gray-300 font-normal">/</span>
+                    <span class="text-black">EN</span>
+                </div>
+                <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-gray-900 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
             </div>
+        </div>
+        <nav id="mobile-menu" class="hidden flex-col gap-4 mt-4 pt-4 border-t border-gray-200 text-xs font-bold tracking-widest text-gray-500">
+            <a href="../distillate.html" class="hover:text-black uppercase transition-colors">The Distillate</a>
+            <a href="../gears.html" class="hover:text-black uppercase transition-colors">Gears</a>
+            <a href="../fragments.html" class="hover:text-black uppercase transition-colors">Fragments</a>
         </nav>
     </header>
 
