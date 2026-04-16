@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La genèse des Gilets jaunes - PRISME</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=JetBrains+Mono&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="flex flex-col md:flex-row min-h-screen">
+
+    <!-- Menu Mobile -->
+    <header class="md:hidden flex flex-col p-4 border-b border-gray-200 bg-[#F9F9F9] sticky top-0 z-50">
+        <div class="flex items-center justify-between w-full">
+            <a href="../index.html">
+                <h2 class="text-sm font-bold tracking-widest uppercase text-black hover:text-blue-600 transition-colors">PRISME</h2>
+            </a>
+            <div class="flex items-center gap-4 text-xs font-bold tracking-widest">
+                <div class="flex items-center gap-1">
+                    <span class="text-black">FR</span>
+                    <span class="text-gray-300 font-normal">/</span>
+                    <a href="../0_en/index.html" class="text-gray-500 hover:text-blue-600 transition-colors">EN</a>
+                </div>
+                <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-gray-900 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="hidden flex-col gap-4 mt-4 pt-4 border-t border-gray-200 text-xs font-bold tracking-widest text-gray-500">
+            <a href="../distillat.html" class="hover:text-black uppercase transition-colors">Le distillat</a>
+            <a href="../rouages.html" class="hover:text-black uppercase transition-colors">Rouages</a>
+            <a href="../fragments.html" class="hover:text-black uppercase transition-colors">Fragments</a>
+        </nav>
+    </header>
+
+    <aside class="w-1/6 min-w-[200px] border-r border-gray-200 hidden md:flex flex-col p-8 sticky top-0 h-screen bg-[#F9F9F9] z-10">
+        <a href="../index.html">
+            <h2 class="text-sm font-bold tracking-widest mb-16 uppercase text-black hover:text-blue-600 transition-colors">PRISME</h2>
+        </a>
+        <nav class="flex flex-col gap-6 text-xs font-semibold tracking-widest text-gray-500">
+            <a href="../distillat.html" class="hover:text-black hover:border-l-2 hover:border-gray-300 pl-3 uppercase transition-all">Le distillat</a>
+            <a href="../rouages.html" class="text-black border-l-2 border-blue-600 pl-3 uppercase">Rouages</a>
+            <a href="../fragments.html" class="hover:text-black hover:border-l-2 hover:border-gray-300 pl-3 uppercase transition-all">Fragments</a>
+        </nav>
+        
+        <div class="mt-auto text-xs font-bold tracking-widest text-gray-400">
+            <span class="text-black">FR</span> <span class="text-gray-300 font-normal mx-1">/</span> <a href="../0_en/index.html" class="hover:text-blue-600 transition-colors">EN</a>
+        </div>
+    </aside>
+
+    <main class="flex-1 w-full max-w-[1400px] px-4 py-6 md:p-12">
+        
+        <a href="../rouages.html" class="text-sm font-semibold tracking-widest text-gray-500 hover:text-blue-600 uppercase mb-6 md:mb-8 inline-flex items-center gap-2 transition-colors">
+            <span>←</span> Retour aux rouages
+        </a>
+
+        <div class="mt-4">
+            <article class="mx-auto w-full max-w-4xl bg-white p-5 md:p-10 border border-gray-200 rounded-lg shadow-sm">
+                <div class="mb-4 text-[11px] font-bold text-gray-400 tracking-widest uppercase">SOCIOLOGIE / SYSTÈME</div>
+                <h1 class="font-serif text-2xl md:text-5xl text-black mb-4">La genèse des Gilets jaunes : Autopsie d'une dévaluation interne</h1>
+                <div class="flex items-center gap-2 text-xs font-bold text-gray-400 tracking-widest uppercase mb-8">
+                    <span>⏱ 4 min de lecture</span>
+                </div>
+                
+                <p class="text-gray-700 leading-relaxed mb-6 text-base md:text-lg">Si le mouvement des Gilets jaunes cristallise des décennies de fractures territoriales, son déclencheur systémique réside dans un arbitrage régalien brutal : le transfert forcé de richesse des ménages vers l'appareil productif pour pallier le déclin de la compétitivité française. À l'exercice 2019, la décision de financer le maintien du Crédit d'impôt pour la compétitivité et l'emploi (CICE) par une ponction sur la mobilité thermique a marqué le point de rupture de la paix sociale. Cette manœuvre s'inscrivait dans une stratégie de dévaluation fiscale, seul levier restant à un État privé de souveraineté monétaire pour tenter de stabiliser son rang face à l'hégémonie de son principal rival continental. Pour saisir la logique de cet affrontement, il convient de retracer la trajectoire de l'asymétrie de puissance avec l'Allemagne, dont les impératifs de domination ont fini par fracturer la cohésion intérieure française.</p>
+
+                <h3 class="text-xl font-semibold text-black mb-3 mt-8">Le modèle Hartz : Le précédent de l’asymétrie</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">Au tournant des années 2000, l'Allemagne, alors qualifiée d’« homme malade de l’Europe », a entrepris une mutation stratégique brute pour restaurer sa base industrielle. Sous l’impulsion du chancelier Gerhard Schröder, les lois Hartz (I à IV) ont constitué une manœuvre de dévaluation interne : l'ajustement par le taux de change étant impossible au sein de l'union monétaire, Berlin a restauré sa compétitivité-prix en comprimant radicalement ses coûts salariaux et ses prestations sociales.</p>
+                <p class="text-gray-700 leading-relaxed mb-6">Cette stratégie mercantiliste a permis à la République fédérale d'accumuler des excédents commerciaux records, culminant à près de 250 milliards d'euros en 2016 (soit environ 8 % de son PIB), faisant d'elle le créancier hégénomique de la zone euro. Toutefois, ce gain de puissance extérieure a été acheté au prix d'une fracture sociale profonde : en précarisant son propre prolétariat par la création d'un vaste secteur de "travailleurs pauvres", l'État allemand a délibérément sacrifié sa cohésion intérieure pour garantir sa survie et sa domination dans la hiérarchie économique mondiale.</p>
+
+                <h3 class="text-xl font-semibold text-black mb-3 mt-8">Le mirage de l'entreprise « fabless » et l'atrophie industrielle</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">Alors que l'Allemagne consolidait son socle productif par les réformes Hartz, la France s'égarait dans la doctrine de l'entreprise « sans usines » (fabless). Portée par les grands capitaines d'industrie des années 2000, cette vision postulait que la puissance résiderait désormais uniquement dans la conception et l'immatériel, déléguant la production jugée à faible valeur ajoutée aux puissances émergentes.</p>
+                <p class="text-gray-700 leading-relaxed mb-6">Ce fut un désastre géopolitique : en démantelant ses chaînes de montage, la France a perdu des milliers d’emplois. De surcroit, elle a brisé le lien organique entre son territoire et sa richesse. L'appareil productif, ainsi amputé, a vu ses parts de marché s'effondrer, laissant le pays vulnérable face à un bloc allemand dont la puissance repose précisément sur le contrôle physique de la transformation industrielle.</p>
+
+                <h3 class="text-xl font-semibold text-black mb-3 mt-8">Le pivot de 2018 : L'arbitrage Kohler et l'impasse de « l'année double »</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">L'arrivée au pouvoir de l'administration Macron en 2017 a marqué une volonté de rupture avec l'hésitation stratégique française. Sous l'impulsion d'Alexis Kohler, secrétaire général de l'Élysée et architecte d'une recentralisation du pilotage économique, dont les orientations furent en partie révélées par les « Macronleaks », l'État a décidé de transformer le CICE en un basculement en allègements de charges pérennes et directs. Ce pivot visait à offrir une liquidité instantanée aux entreprises pour enrayer enfin le décrochage face à Berlin.</p>
+                <p class="text-gray-700 leading-relaxed mb-6">Cependant, cette mutation a généré un choc budgétaire inédit : « l'année double ». En 2019, l'État a dû honorer simultanément les créances de l'ancien CICE (basées sur les salaires de 2018) et financer la nouvelle exonération de charges directe. Pour combler cette impasse de près de 20 milliards d'euros sans déroger aux impératifs de Maastricht ni perdre sa crédibilité auprès de ses créanciers allemands, l'exécutif a activé un levier fiscal captif : la taxe carbone. En habillant cette ponction budgétaire du sceau de l'écologie, l'État a délibérément transféré le coût du maintien de sa compétitivité internationale sur la mobilité thermique des classes moyennes et populaires. Ce sacrifice de la périphérie géographique, jugé technocratiquement nécessaire à la survie du centre productif, a brisé le seuil de tolérance du corps social, déclenchant l'insurrection des Gilets jaunes.</p>
+
+                <h3 class="text-xl font-semibold text-black mb-3 mt-8">La révolte de l'hinterland</h3>
+                <p class="text-gray-700 leading-relaxed mb-6">Le soulèvement de novembre 2018 a marqué l'échec de la gestion technocratique des territoires. La mobilité des ménages que l'État percevait comme une simple variable d'ajustement fiscal s'est révélé être le nerf vital de la "France périphérique". L'insurrection ne fut pas une simple contestation sociale, mais la rébellion de l'hinterland contre un centre urbain mondialisé qui ne lui assurait plus la sécurité économique en échange de son obéissance fiscale. Pour protéger sa survie institutionnelle face à cette sédition, l'État a dû mobiliser son appareil répressif avec une intensité inédite, révélant que la cohésion nationale ne reposait plus que sur la seule force coercitive.</p>
+
+                <h3 class="text-xl font-semibold text-black mb-3 mt-8">L'échec stratégique</h3>
+                <p class="text-gray-700 leading-relaxed mb-6">Pour éteindre l'incendie et éviter l'effondrement du régime, l'exécutif a dû concéder, dès décembre 2018, près de 10 milliards d'euros de mesures d'urgence. Cette reculade constitue un désastre : l'État a dépensé en une nuit la moitié des gains de compétitivité qu'il espérait extraire par sa dévaluation fiscale. La France s'est ainsi retrouvée doublement affaiblie : son déficit s'est creusé sans que sa paix intérieure ne soit rétablie, et son "choc de compétitivité" a été amputé de sa substance financière. Au lieu de rattraper l'Allemagne, Paris a simplement acheté un sursis politique au prix d'une dégradation de sa trajectoire budgétaire.</p>
+
+                <div class="h-px w-full bg-gray-200 my-8"></div>
+                
+                <p class="text-gray-900 font-medium leading-relaxed italic text-base md:text-lg">
+                    L'épisode des Gilets jaunes scelle l'entrée de la France dans une ère de paralysie réformatrice. L'État sait désormais qu'il ne dispose plus de la "profondeur stratégique" nécessaire pour imposer de nouveaux sacrifices à sa population afin de financer son rang international. Cette contrainte transforme la France en une puissance sous tutelle de sa propre cohésion sociale : elle est condamnée à une diplomatie de la dette et du déficit pour masquer son atrophie industrielle.
+                </p>
+            </article>
+        </div>
+    </main>
+</body>
+</html>

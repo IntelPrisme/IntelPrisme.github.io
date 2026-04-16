@@ -51,20 +51,39 @@
 
     <main class="flex-1 w-full max-w-[1400px] px-4 py-8 md:p-12">
         <h1 class="font-serif text-4xl md:text-7xl tracking-tight text-black mb-6 md:mb-8">Gears</h1>
-        <p class="text-gray-600">My autopsies of mechanisms that structure the social body.</p>
+        <p class="text-gray-600 italic">Anatomy of the systems, powers, and structures that shape reality.</p>
 
-        <div class="mt-14 flex flex-col gap-12">
-            <a href="gears/article-the-elite.html" class="article-card mx-auto block w-full max-w-4xl bg-white p-6 md:p-10 border border-gray-200 rounded-lg shadow-sm hover:border-blue-600 hover:shadow-md transition-all group cursor-pointer">
+        <!-- Filters -->
+        <div class="mt-10 border-b border-gray-200">
+            <nav class="-mb-px flex overflow-x-auto no-scrollbar gap-6 md:gap-8">
+                <button data-category="all" class="filter-btn whitespace-nowrap border-b-2 border-blue-600 pb-4 text-xs font-bold uppercase tracking-widest text-blue-600 transition-colors">ALL</button>
+                <button data-category="sociology" class="filter-btn whitespace-nowrap border-b-2 border-transparent pb-4 text-xs font-semibold uppercase tracking-widest text-gray-500 hover:border-gray-300 hover:text-black transition-colors">SOCIOLOGY / SYSTEM</button>
+                <button data-category="economy" class="filter-btn whitespace-nowrap border-b-2 border-transparent pb-4 text-xs font-semibold uppercase tracking-widest text-gray-500 hover:border-gray-300 hover:text-black transition-colors">ECONOMY</button>
+            </nav>
+        </div>
+
+        <div class="mt-10 flex flex-col gap-12">
+            <a href="gears/article-yellow-vests.html" data-category="sociology" class="article-card mx-auto block w-full max-w-4xl bg-white p-6 md:p-10 border border-gray-200 rounded-lg shadow-sm hover:border-blue-600 hover:shadow-md transition-all group cursor-pointer">
+                <div class="mb-4 text-[11px] font-bold text-gray-400 tracking-widest uppercase">SOCIOLOGY / SYSTEM</div>
+                <h2 class="font-serif text-2xl md:text-4xl text-black mb-3 group-hover:text-blue-600 transition-colors">The Genesis of the Yellow Vests: Autopsy of an Internal Devaluation</h2>
+                <div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 tracking-widest uppercase mb-4">
+                    <span>⏱ 4 min read</span>
+                </div>
+                <p class="text-gray-700 leading-relaxed mb-6 text-base md:text-lg">Analysis of the transfer of wealth from households to the production apparatus and the power asymmetry with Germany as triggers for the 2018 crisis.</p>
+                <span class="text-blue-600 font-semibold text-sm tracking-widest uppercase flex items-center gap-2">Read article <span class="group-hover:translate-x-1 transition-transform">→</span></span>
+            </a>
+
+            <a href="gears/article-the-elite.html" data-category="sociology" class="article-card mx-auto block w-full max-w-4xl bg-white p-6 md:p-10 border border-gray-200 rounded-lg shadow-sm hover:border-blue-600 hover:shadow-md transition-all group cursor-pointer">
                 <div class="mb-4 text-[11px] font-bold text-gray-400 tracking-widest uppercase">SOCIOLOGY / SYSTEM</div>
                 <h2 class="font-serif text-2xl md:text-4xl text-black mb-3 group-hover:text-blue-600 transition-colors">The Elite: Selection through Conformity</h2>
                 <div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 tracking-widest uppercase mb-4">
                     <span>⏱ 5 min read</span>
                 </div>
-                <p class="text-gray-700 leading-relaxed mb-6 text-base md:text-lg">The Grandes Écoles are not centers of social innovation, but instruments for preserving state and economic power.</p>
+                <p class="text-gray-700 leading-relaxed mb-6 text-base md:text-lg">Why the Grandes Écoles are not centers of innovation, but instruments for the reproduction of state power.</p>
                 <span class="text-blue-600 font-semibold text-sm tracking-widest uppercase flex items-center gap-2">Read article <span class="group-hover:translate-x-1 transition-transform">→</span></span>
             </a>
         </div>
-
     </main>
+    <script src="../distillat.js"></script>
 </body>
 </html>

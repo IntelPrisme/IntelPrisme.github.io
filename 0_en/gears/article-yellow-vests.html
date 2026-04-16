@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Genesis of the Yellow Vests - PRISME</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=JetBrains+Mono&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="flex flex-col md:flex-row min-h-screen">
+
+    <!-- Mobile Menu -->
+    <header class="md:hidden flex flex-col p-4 border-b border-gray-200 bg-[#F9F9F9] sticky top-0 z-50">
+        <div class="flex items-center justify-between w-full">
+            <a href="../index.html">
+                <h2 class="text-sm font-bold tracking-widest uppercase text-black hover:text-blue-600 transition-colors">PRISME</h2>
+            </a>
+            <div class="flex items-center gap-4 text-xs font-bold tracking-widest">
+                <div class="flex items-center gap-1">
+                    <a href="../../rouages/article-gilets-jaunes.html" class="text-gray-500 hover:text-blue-600 transition-colors">FR</a>
+                    <span class="text-gray-300 font-normal">/</span>
+                    <span class="text-black">EN</span>
+                </div>
+                <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-gray-900 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="hidden flex-col gap-4 mt-4 pt-4 border-t border-gray-200 text-xs font-bold tracking-widest text-gray-500">
+            <a href="../distillate.html" class="hover:text-black uppercase transition-colors">The Distillate</a>
+            <a href="../gears.html" class="hover:text-black uppercase transition-colors">Gears</a>
+            <a href="../fragments.html" class="hover:text-black uppercase transition-colors">Fragments</a>
+        </nav>
+    </header>
+
+    <aside class="w-1/6 min-w-[200px] border-r border-gray-200 hidden md:flex flex-col p-8 sticky top-0 h-screen bg-[#F9F9F9] z-10">
+        <a href="../index.html">
+            <h2 class="text-sm font-bold tracking-widest mb-16 uppercase text-black hover:text-blue-600 transition-colors">PRISME</h2>
+        </a>
+        <nav class="flex flex-col gap-6 text-xs font-semibold tracking-widest text-gray-500">
+            <a href="../distillate.html" class="hover:text-black pl-3 uppercase">The Distillate</a>
+            <a href="../gears.html" class="text-black border-l-2 border-blue-600 pl-3 uppercase">Gears</a>
+            <a href="../fragments.html" class="hover:text-black pl-3 uppercase">Fragments</a>
+        </nav>
+        <div class="mt-auto text-xs font-bold tracking-widest text-gray-400">
+            <a href="../../rouages/article-gilets-jaunes.html" class="hover:text-blue-600 transition-colors">FR</a> <span class="text-gray-300 font-normal mx-1">/</span> <span class="text-black">EN</span>
+        </div>
+    </aside>
+
+    <main class="flex-1 w-full max-w-[1400px] px-4 py-6 md:p-12">
+        <a href="../gears.html" class="text-sm font-semibold tracking-widest text-gray-500 hover:text-blue-600 uppercase mb-6 md:mb-8 inline-flex items-center gap-2 transition-colors">
+            <span>←</span> Back to Gears
+        </a>
+
+        <div class="mt-4">
+            <article class="mx-auto w-full max-w-4xl bg-white p-5 md:p-10 border border-gray-200 rounded-lg shadow-sm">
+                <div class="mb-4 text-[11px] font-bold text-gray-400 tracking-widest uppercase">SOCIOLOGY / SYSTEM</div>
+                <h1 class="font-serif text-2xl md:text-5xl text-black mb-4">The Genesis of the Yellow Vests: Autopsy of an Internal Devaluation</h1>
+                <div class="flex items-center gap-2 text-xs font-bold text-gray-400 tracking-widest uppercase mb-8">
+                    <span>⏱ 4 min read</span>
+                </div>
+                
+                <p class="text-gray-700 leading-relaxed mb-6 text-base md:text-lg">While the Yellow Vests movement crystallizes decades of territorial fractures, its systemic trigger lies in a brutal sovereign trade-off: the forced transfer of wealth from households to the productive apparatus to mitigate the decline of French competitiveness. In 2019, the decision to finance the continuation of the Competitiveness and Employment Tax Credit (CICE) through a tax on thermal mobility marked the breaking point of social peace.</p>
+
+                <h3 class="text-xl font-semibold text-black mb-3 mt-8">The Hartz Model: The Precedent of Asymmetry</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">At the turn of the 2000s, Germany, then dubbed the "sick man of Europe," undertook a strategic mutation to restore its industrial base. Under Chancellor Gerhard Schröder, the Hartz laws constituted a maneuver of internal devaluation: since currency adjustment was impossible within the monetary union, Berlin restored its price competitiveness by radically compressing labor costs and social benefits.</p>
+                <p class="text-gray-700 leading-relaxed mb-6">This mercantilist strategy allowed Germany to accumulate record trade surpluses, peaking at nearly 250 billion euros in 2016. However, this gain in external power was bought at the price of a deep social fracture, deliberately sacrificing internal cohesion to guarantee survival in the global economic hierarchy.</p>
+
+                <h3 class="text-xl font-semibold text-black mb-3 mt-8">The "Fabless" Mirage and Industrial Atrophy</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">While Germany consolidated its productive core, France strayed into the doctrine of "fabless" companies. This vision postulated that power would henceforth reside only in design and the intangible, delegating production to emerging powers.</p>
+                <p class="text-gray-700 leading-relaxed mb-6">This was a geopolitical disaster: by dismantling its assembly lines, France lost thousands of jobs and broke the organic link between its territory and its wealth. The productive apparatus, thus amputated, saw its market shares collapse, leaving the country vulnerable to a German bloc whose power rests precisely on the physical control of industrial transformation.</p>
+
+                <h3 class="text-xl font-semibold text-black mb-3 mt-8">The 2018 Pivot: The Kohler Arbitration</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">In 2017, the Macron administration decided to transform the CICE into permanent and direct charge reductions to stop the lag behind Berlin. However, this mutation generated an unprecedented budgetary shock: the "double year."</p>
+                <p class="text-gray-700 leading-relaxed mb-6">In 2019, the State had to simultaneously honor old CICE debts and finance new direct exemptions. To fill this 20-billion-euro gap, the executive activated a captive fiscal lever: the carbon tax. By branding this budgetary drain as ecological, the State deliberately transferred the cost of maintaining international competitiveness onto the mobility of the lower and middle classes. This sacrifice of the geographical periphery triggered the Yellow Vests insurrection.</p>
+
+                <h3 class="text-xl font-semibold text-black mb-3 mt-8">The Hinterland Revolt</h3>
+                <p class="text-gray-700 leading-relaxed mb-6">The November 2018 uprising marked the failure of technocratic territorial management. Mobility, which the State perceived as a simple fiscal variable, proved to be the vital nerve of "peripheral France." The insurrection was the rebellion of the hinterland against a globalized urban center that no longer provided economic security in exchange for fiscal obedience.</p>
+
+                <h3 class="text-xl font-semibold text-black mb-3 mt-8">Strategic Failure</h3>
+                <p class="text-gray-700 leading-relaxed mb-6">To extinguish the fire, the executive had to concede nearly 10 billion euros in emergency measures. This retreat constitutes a disaster: the State spent in one night half of the competitiveness gains it hoped to extract. France found itself doubly weakened: its deficit widened without restoring internal peace, and its "competitiveness shock" was stripped of its financial substance.</p>
+
+                <div class="h-px w-full bg-gray-200 my-8"></div>
+                
+                <p class="text-gray-900 font-medium leading-relaxed italic text-base md:text-lg">
+                    The Yellow Vests episode seals France's entry into an era of reformist paralysis. The State now knows it no longer has the "strategic depth" required to impose new sacrifices on its population. France is condemned to a diplomacy of debt to mask its industrial atrophy.
+                </p>
+            </article>
+        </div>
+    </main>
+</body>
+</html>

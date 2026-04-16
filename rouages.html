@@ -43,7 +43,6 @@
             <a href="rouages.html" class="text-black border-l-2 border-blue-600 pl-3 uppercase">Rouages</a>
             <a href="fragments.html" class="hover:text-black hover:border-l-2 hover:border-gray-300 pl-3 uppercase transition-all">Fragments</a>
         </nav>
-        
         <div class="mt-auto text-xs font-bold tracking-widest text-gray-400">
             <span class="text-black">FR</span> <span class="text-gray-300 font-normal mx-1">/</span> <a href="0_en/gears.html" class="hover:text-blue-600 transition-colors">EN</a>
         </div>
@@ -51,20 +50,39 @@
 
     <main class="flex-1 w-full max-w-[1400px] px-4 py-8 md:p-12">
         <h1 class="font-serif text-4xl md:text-7xl tracking-tight text-black mb-6 md:mb-8">Rouages</h1>
-        <p class="text-gray-600">Mes autopsies de mécanismes qui structurent le corps social.</p>
+        <p class="text-gray-600 italic">Anatomie des systèmes, des pouvoirs et des structures qui façonnent le réel.</p>
 
-        <div class="mt-14 flex flex-col gap-12">
-            <a href="rouages/article-lelite.html" class="article-card mx-auto block w-full max-w-4xl bg-white p-6 md:p-10 border border-gray-200 rounded-lg shadow-sm hover:border-blue-600 hover:shadow-md transition-all group cursor-pointer">
+        <!-- Filtres -->
+        <div class="mt-10 border-b border-gray-200">
+            <nav class="-mb-px flex overflow-x-auto no-scrollbar gap-6 md:gap-8">
+                <button data-category="tout" class="filter-btn whitespace-nowrap border-b-2 border-blue-600 pb-4 text-xs font-bold uppercase tracking-widest text-blue-600 transition-colors">TOUT</button>
+                <button data-category="sociologie" class="filter-btn whitespace-nowrap border-b-2 border-transparent pb-4 text-xs font-semibold uppercase tracking-widest text-gray-500 hover:border-gray-300 hover:text-black transition-colors">SOCIOLOGIE / SYSTÈME</button>
+                <button data-category="economie" class="filter-btn whitespace-nowrap border-b-2 border-transparent pb-4 text-xs font-semibold uppercase tracking-widest text-gray-500 hover:border-gray-300 hover:text-black transition-colors">ÉCONOMIE</button>
+            </nav>
+        </div>
+
+        <div class="mt-10 flex flex-col gap-12">
+            <a href="rouages/article-gilets-jaunes.html" data-category="sociologie" class="article-card mx-auto block w-full max-w-4xl bg-white p-6 md:p-10 border border-gray-200 rounded-lg shadow-sm hover:border-blue-600 hover:shadow-md transition-all group cursor-pointer">
+                <div class="mb-4 text-[11px] font-bold text-gray-400 tracking-widest uppercase">SOCIOLOGIE / SYSTÈME</div>
+                <h2 class="font-serif text-2xl md:text-4xl text-black mb-3 group-hover:text-blue-600 transition-colors">La genèse des Gilets jaunes : Autopsie d'une dévaluation interne</h2>
+                <div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 tracking-widest uppercase mb-4">
+                    <span>⏱ 4 min de lecture</span>
+                </div>
+                <p class="text-gray-700 leading-relaxed mb-6 text-base md:text-lg">Analyse du transfert de richesse des ménages vers l'appareil productif et de l'asymétrie de puissance avec l'Allemagne comme déclencheurs de la crise de 2018.</p>
+                <span class="text-blue-600 font-semibold text-sm tracking-widest uppercase flex items-center gap-2">Lire l'article <span class="group-hover:translate-x-1 transition-transform">→</span></span>
+            </a>
+
+            <a href="rouages/article-lelite.html" data-category="sociologie" class="article-card mx-auto block w-full max-w-4xl bg-white p-6 md:p-10 border border-gray-200 rounded-lg shadow-sm hover:border-blue-600 hover:shadow-md transition-all group cursor-pointer">
                 <div class="mb-4 text-[11px] font-bold text-gray-400 tracking-widest uppercase">SOCIOLOGIE / SYSTÈME</div>
                 <h2 class="font-serif text-2xl md:text-4xl text-black mb-3 group-hover:text-blue-600 transition-colors">L’Élite : La sélection par le conformisme</h2>
                 <div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 tracking-widest uppercase mb-4">
                     <span>⏱ 5 min de lecture</span>
                 </div>
-                <p class="text-gray-700 leading-relaxed mb-6 text-base md:text-lg">Les grandes écoles ne sont pas des centres d'innovation sociale, mais des instruments de conservation de la puissance étatique et économique.</p>
+                <p class="text-gray-700 leading-relaxed mb-6 text-base md:text-lg">Pourquoi les grandes écoles ne sont pas des centres d'innovation, mais des instruments de reproduction de la puissance étatique.</p>
                 <span class="text-blue-600 font-semibold text-sm tracking-widest uppercase flex items-center gap-2">Lire l'article <span class="group-hover:translate-x-1 transition-transform">→</span></span>
             </a>
         </div>
-
     </main>
+    <script src="distillat.js"></script>
 </body>
 </html>
